@@ -1,0 +1,80 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Online RAM Speed Test</title>
+	{% seo title=false %}
+</head>
+
+<body>
+	<style type="text/css">
+		html {
+			height: 100vh;
+			overflow-x: auto;
+			overflow-y: auto;
+		}
+		body {
+			background-color: #4baad3;
+			background-image: -webkit-linear-gradient(left bottom,#462667,#9c75c3);
+		}
+		p {
+			font-family: "Open Sans",Helvetica,Arial,sans-serif;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			color: #fff;
+			font-size: 32px;
+			font-weight: 300;
+		}
+		* {
+			text-decoration: none !important;
+			cursor: default !important;
+			padding: 0;
+			margin: 0;
+		}
+		a {
+			color: wheat;
+			cursor: pointer !important;
+		}
+		button {
+			width: 200pt;
+			height: 90pt;
+			font-size: 20pt;
+		}
+
+		input[type=radio] {
+		    border: 0px;
+		    width: 20pt;
+		    height: 20pt;
+		}
+	</style>
+	<p>Try Web Online RAM Speed Test without any external apps just in your browser!</p>
+	<br />
+	<p>
+
+	<input type="radio" id="alloc05" name="alloc" value="alloc05">
+	<label for="alloc05">Allocate 0.5 Gb (for mobile devices)</label>
+	<br>
+
+	<input type="radio" id="alloc1" name="alloc" value="alloc1">
+	<label for="alloc1">Allocate 1 Gb</label>
+	<br>
+
+	<input type="radio" id="alloc2" name="alloc" value="alloc2" checked="checked">
+	<label for="alloc2">Allocate 2 Gb (Chrome only)</label>
+
+	</p>
+
+	<br />
+	<p><button id="test" title="Note: test checks the 'copy' speed of RAM">Test now!</button></p>
+	<br />
+	<script type="text/javascript" src="ram-tester.js"></script>
+	<p id="results">Please click a button and wait while your computer memory speed is computed...</p>
+	<br />
+	<p>Also visit my projects: <a href="https://github.com/hexalang">@hexalang</a> and <a href="https://github.com/GreenteaOS">@greenteaos</a><br /><span>Support me on <a href="https://www.patreon.com/PeyTy">Patreon</a></span></p>
+</body>
+
+</html>
